@@ -1,0 +1,138 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        height: 100%;
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: black;
+        color: greenyellow;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho{
+        padding: 2% 0 0 15%;
+    }
+
+    .cabecalhoMenu{
+        display: flex;
+        gap: 5%;
+    }
+
+    .cabecalhoMenuLink{
+        font-size: 24px;
+        font-weight: 600;
+        color: greenyellow;
+        text-decoration: none;
+    }
+
+    .apresentacao{
+        flex: 1;
+        padding: 5% 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5.125rem;
+        height: 100%;
+    }
+
+    .apresentacaoTexto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: auto;
+        font-size: 1.2rem;
+    }
+
+    .apresentacaoTitulo{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .apresentacaoDescricao{
+        font-size: 1.2rem;
+        align-items: center;
+    }
+
+    .apresentacaoLinks{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .apresentacaoLinksSubTitulo{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .apresentacaoLink{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        border: 0.125rem solid greenyellow;
+        width: 80%;
+        text-align: center;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        padding: 1.344rem 0;
+        text-decoration: none;
+        color: greenyellow;
+        font-weight: bold;
+    }
+
+    .foto{
+        width: 50%;
+        height: 29.5rem;
+        border-radius: 1rem;
+        border: 0.25rem solid greenyellow;
+    }
+
+    .apresentacaoLink:hover{
+        background-color: #272727;
+    }
+
+    .rodape{
+        background-color: #272727;
+        padding: 1.5rem ;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+    }
+
+    @media  (max-width: 75rem){
+        .cabecalho{
+            padding: 10%;
+        }
+
+        .cabecalhoMenu{
+            justify-content: center;
+        }
+       
+        .apresentacao{
+            flex-direction: column-reverse;
+            padding: 5%;
+        }
+
+        .apresentacaoTexto{
+            width: auto;
+        }
+
+        .foto{
+            width: auto;
+        }
+        .rodape{
+            bottom: unset;
+            position: relative;
+        }
+
+    }
